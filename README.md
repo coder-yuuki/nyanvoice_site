@@ -1,33 +1,52 @@
-# にゃんボイス GitHub Pages サイト
+# にゃんボイス 公式サイト（静的サイト）
 
-このZIPは、GitHub Pagesでそのまま公開しやすい静的サイト一式です。
+にゃんボイスの紹介用ランディングページです。  
+HTML / CSS / JavaScript だけで構成された、GitHub Pages 向けの静的サイトです。
 
-## 含まれているもの
+## サイトの内容
 
-- `index.html` : トップページ
-- `styles.css` : デザイン用CSS
-- `script.js` : メニュー開閉 / スクリーンショット拡大表示 / スクロール演出
-- `assets/img/` : スクリーンショットとアプリアイコン
-- `.nojekyll` : GitHub Pages向け
+- ヒーローセクション（App Store への導線つき）
+- 機能紹介
+- 料金比較表（機能 × プラン）
+- スクリーンショット / 紹介動画
+- パートナーサークル掲載予定エリア
+- 関連リンク（紹介記事・Xなど）
 
-## 公開手順（GitHub Pages）
+## ディレクトリ構成
 
-1. 新しいGitHubリポジトリを作成します。
-2. このZIPの中身を、リポジトリのルートにアップロードします。
-3. GitHub の **Settings** → **Pages** を開きます。
-4. **Build and deployment** の **Source** を `Deploy from a branch` にします。
-5. Branch を `main` / `/ (root)` に設定して保存します。
-6. 数十秒ほど待つと、公開URLが発行されます。
+- `index.html` : ページ本体
+- `styles.css` : スタイル定義
+- `script.js` : ナビ開閉、スクリーンショット拡大表示、スクロール演出
+- `assets/img/` : 画像アセット
+- `.nojekyll` : GitHub Pages で Jekyll を無効化
 
-## カスタマイズしやすい箇所
+## ローカルでの確認方法
 
-- 記事リンク：`index.html` 内の `izanami.dev` のURL
-- 動画リンク：`#videos` セクション内の YouTube iframe
-- 紹介文：各セクションのテキストを自由に変更できます
-- スクリーンショット：`assets/img/` を差し替えればOKです
+プロジェクトルートで以下を実行:
 
-## メモ
+```bash
+python3 -m http.server 4173
+```
 
-- スマホでも見やすいレスポンシブデザインです。
-- スクリーンショットは軽量化した `webp` 形式にしてあります。
-- 外部ライブラリなしの構成なので、そのまま扱いやすいです。
+ブラウザで `http://127.0.0.1:4173/index.html` を開くと確認できます。
+
+## GitHub Pages で公開する
+
+1. GitHub リポジトリに push する
+2. リポジトリの **Settings** -> **Pages** を開く
+3. **Source** を `Deploy from a branch` に設定
+4. `main` ブランチ / `/(root)` を選択して保存
+5. 公開URLが発行されるまで待つ
+
+## 編集しやすいポイント
+
+- 文言の変更: `index.html`
+- 配色・余白・コンポーネント調整: `styles.css`
+- 動作変更（ライトボックス等）: `script.js`
+- スクリーンショット差し替え: `assets/img/`
+
+## 補足
+
+- レスポンシブ対応済みです。
+- 外部ライブラリは使用していません。
+- 価格や機能の最新情報は App Store 表示と紹介記事を優先してください。
