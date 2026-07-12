@@ -788,6 +788,121 @@ section[id] {
   color: var(--muted);
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links a,
+.policy-nav a {
+  color: var(--primary-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible,
+.policy-nav a:hover,
+.policy-nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.policy-main {
+  position: relative;
+  z-index: 1;
+  padding: 72px 0 40px;
+}
+
+.policy-shell {
+  max-width: 920px;
+}
+
+.policy-hero {
+  margin-bottom: 32px;
+}
+
+.policy-hero h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.policy-hero > p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.policy-hero .policy-updated {
+  margin-top: 18px;
+  font-size: 0.92rem;
+}
+
+.policy-card {
+  padding: clamp(28px, 6vw, 64px);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.policy-card section + section {
+  margin-top: 44px;
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+
+.policy-card h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.35rem, 3vw, 1.7rem);
+  line-height: 1.4;
+}
+
+.policy-card h3 {
+  margin: 26px 0 8px;
+  font-size: 1.08rem;
+}
+
+.policy-card p,
+.policy-card ul {
+  margin: 0;
+  color: var(--muted);
+}
+
+.policy-card p + p,
+.policy-card ul + p {
+  margin-top: 16px;
+}
+
+.policy-card ul {
+  padding-left: 1.4em;
+}
+
+.policy-card li + li {
+  margin-top: 8px;
+}
+
+.policy-card a {
+  color: var(--primary-dark);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.policy-card code {
+  padding: 0.18em 0.4em;
+  border-radius: 8px;
+  background: rgba(231, 92, 140, 0.1);
+  color: #8f2950;
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
 .footer-note {
   align-self: flex-end;
   text-align: right;
@@ -926,6 +1041,10 @@ section[id] {
     flex-direction: column;
   }
 
+  .footer-links {
+    align-items: flex-start;
+  }
+
   .footer-note {
     text-align: left;
     align-self: auto;
@@ -939,6 +1058,14 @@ section[id] {
 
   .site-header {
     padding: 12px 0;
+  }
+
+  .policy-main {
+    padding-top: 48px;
+  }
+
+  .policy-nav a {
+    font-size: 0.9rem;
   }
 
   .menu-toggle {
