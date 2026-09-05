@@ -2,6 +2,20 @@ const menuToggle = document.querySelector('.menu-toggle');
 const globalNav = document.querySelector('.global-nav');
 
 if (menuToggle && globalNav) {
+  menuToggle.hidden = false;
+  globalNav.classList.add('is-collapsible');
+  const closeMenu = () => {
+    globalNav.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && globalNav.classList.contains('is-open')) {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+
   menuToggle.addEventListener('click', () => {
     const isOpen = globalNav.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
@@ -15,32 +29,18 @@ if (menuToggle && globalNav) {
   });
 }
 
-const revealItems = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-revealItems.forEach((item) => observer.observe(item));
-
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxCaption = document.getElementById('lightbox-caption');
 const lightboxClose = document.querySelector('.lightbox-close');
-const galleryCards = document.querySelectorAll('.gallery-card');
+const galleryCards = document.querySelectorAll('button[data-full]');
 
 if (lightbox && lightboxImage && lightboxCaption) {
   galleryCards.forEach((card) => {
     card.addEventListener('click', () => {
       const full = card.getAttribute('data-full');
       const title = card.getAttribute('data-title') || '';
+      if (!full) return;
       lightboxImage.src = full;
       lightboxImage.alt = title;
       lightboxCaption.textContent = title;
@@ -51,7 +51,7 @@ if (lightbox && lightboxImage && lightboxCaption) {
 
   const closeLightbox = () => {
     lightbox.close();
-    lightboxImage.src = '';
+    lightboxImage.removeAttribute('src');
     lightboxImage.alt = '';
     document.body.style.overflow = '';
   };

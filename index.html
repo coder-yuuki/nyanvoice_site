@@ -3,395 +3,350 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>にゃんボイス | 音声作品をもっと楽しく整理して聴ける iOSプレイヤー</title>
+    <title>にゃんボイス | 購入した音声作品をiPhoneで聴く</title>
     <meta
       name="description"
-      content="にゃんボイスは、購入した音声作品をiCloud Drive経由で整理・再生できるiOS向けプレイヤーです。スクリーンショットや動画と一緒に特徴をご紹介します。"
+      content="にゃんボイスは、購入した音声作品をiCloud Drive経由で整理・再生できるiOS向けプレイヤーです。作品名・声優・タグで整理して、聴きたい作品を手元に。"
     />
-    <meta name="theme-color" content="#e75c8c" />
+    <meta name="theme-color" content="#bf3d68" />
     <meta name="google-site-verification" content="YHko4OUOapq8l3vcJyYZ_dUWSL0SYJTSX7yOW1MHis8" />
     <link rel="icon" href="assets/img/app-icon.webp" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-orb orb-3"></div>
-
+    <a class="skip-link" href="#top">本文へ移動</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="にゃんボイス トップへ移動">
-          <img src="assets/img/app-icon.webp" alt="にゃんボイスのアイコン" />
+        <a class="brand" href="#top" aria-label="にゃんボイス トップへ">
+          <img src="assets/img/app-icon.webp" alt="" width="40" height="40" />
           <span>にゃんボイス</span>
         </a>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
-          <span></span><span></span><span></span>
-          <span class="sr-only">メニューを開く</span>
-        </button>
-
-        <nav id="global-nav" class="global-nav" aria-label="グローバルナビゲーション">
-          <a href="#features">特徴</a>
-          <a href="#strengths">強み</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" hidden>メニュー</button>
+        <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+          <a href="#how-to">使い方</a>
+          <a href="#screenshots">アプリの画面</a>
           <a href="#pricing">料金</a>
-          <a href="#screenshots">スクリーンショット</a>
-          <a href="#videos">動画</a>
-          <a href="#partners">パートナー</a>
-          <a href="#links">リンク</a>
+          <a href="#faq">よくある質問</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">推しの声を、いつでもどこでも、もっとシンプルに。</p>
-            <h1>
-              にゃんボイスで、<br />
-              音声作品ライフをもっと楽しく。
-            </h1>
-            <p class="hero-lead">
-              にゃんボイスは、購入した音声作品をiPhone / iPadで見やすく整理して、
-              快適に再生できる専用プレイヤーです。<br />
-              iCloud Driveに入れて更新するだけで、作品がライブラリにすっきり並びます。
-            </p>
-
-            <div class="hero-badges" aria-label="特徴タグ">
-              <span>iOS専用</span>
-              <span>iCloud Drive連携</span>
-              <span>メタデータ整理</span>
-              <span>音声作品向けUI</span>
+          <div class="hero-copy">
+            <div class="app-intro">
+              <img src="assets/img/app-icon.webp" alt="" width="88" height="88" />
+              <div><h1>にゃんボイス</h1><p>音声作品を聴くための iPhone / iPad アプリ</p></div>
             </div>
-
-            <div class="hero-actions">
-              <a class="button primary download-button" href="https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%83%9C%E3%82%A4%E3%82%B9-nearvoice/id6748361244" target="_blank" rel="noopener noreferrer" aria-label="App Storeでにゃんボイスをダウンロード">App Storeでダウンロード</a>
-              <a class="button secondary" href="https://izanami.dev/post/327dfc8d-e30b-4300-ba8e-e4a5934b1fb9" target="_blank" rel="noopener noreferrer">紹介記事を読む</a>
-              <a class="button secondary" href="#videos">紹介動画を見る</a>
-            </div>
+            <p class="hero-lead">買った音声作品を、<br />iPhoneでまとめて聴けます。</p>
+            <p class="hero-description">作品ごとに並べて、好きな声優やタグで探して。<br class="desktop-break" />手持ちの作品を、自分の聴きやすい形に整理できます。</p>
+            <a class="button primary" href="https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%83%9C%E3%82%A4%E3%82%B9-nearvoice/id6748361244" target="_blank" rel="noopener noreferrer">App Storeでダウンロード <span aria-hidden="true">↗</span></a>
+            <p class="download-note">無料で50トラックまで。手持ちの作品で試してみてください。</p>
           </div>
-
-          <div class="hero-visual reveal delay-1">
-            <div class="phone-stack">
-              <figure class="phone-card card-back">
-                <img src="assets/img/player.webp" alt="にゃんボイスの再生画面" />
+          <div class="hero-visual">
+            <div class="hero-screens">
+              <figure class="screen-main">
+                <button class="screen-button" type="button" data-full="assets/img/screenshots/library.jpg" data-title="作品が並ぶライブラリ" aria-label="ライブラリ画面を拡大">
+                  <img src="assets/img/screenshots/library.jpg" alt="ジャケット付きで作品が並ぶライブラリ" width="588" height="1280" fetchpriority="high" />
+                </button>
+                <figcaption>作品を選んで</figcaption>
               </figure>
-              <figure class="phone-card card-front">
-                <img src="assets/img/album-with-mini-player.webp" alt="にゃんボイスのアルバム詳細画面とミニプレイヤー" />
+              <figure class="screen-secondary">
+                <button class="screen-button" type="button" data-full="assets/img/screenshots/player.jpg" data-title="再生画面" aria-label="再生画面を拡大">
+                  <img src="assets/img/screenshots/player.jpg" alt="にゃんボイスの再生画面" width="588" height="1280" />
+                </button>
+                <figcaption>そのまま再生</figcaption>
               </figure>
             </div>
+            <p class="image-note">画面に表示している作品は架空のものです。</p>
           </div>
         </div>
       </section>
 
-      <section class="section section-soft">
+      <section id="features" class="section features-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>こんなふうに使えます</h2>
+            <p>画面の画像はタップすると拡大できます。</p>
+          </div>
+          <div id="strengths" class="feature-stories">
+            <article class="feature-story">
+              <figure class="story-figure">
+                <button class="screen-button" type="button" data-full="assets/img/screenshots/work-detail.jpg" data-title="作品のトラック一覧" aria-label="作品のトラック一覧を拡大">
+                  <img src="assets/img/screenshots/work-detail.jpg" alt="ジャケット、作品情報、4トラックをまとめて表示する作品詳細画面" width="588" height="1280" loading="lazy" />
+                </button>
+                <figcaption>作品を開いたところ。ジャケットの下にトラックが並びます。</figcaption>
+              </figure>
+              <div class="story-copy">
+                <h3>作品の中のトラックを<br />まとめて再生</h3>
+                <p>ひとつの作品に入っている音声を、まとめて表示します。「すべて再生」で聴いたり、好きなトラックだけ選んだりできます。</p>
+                <p>再生中は画面の下にミニプレイヤーが出るので、ほかの作品を見ている間も操作できます。</p>
+              </div>
+            </article>
+            <article class="feature-story story-edit">
+              <div class="story-copy">
+                <h3>声優名やタグは<br />あとから編集できます</h3>
+                <p>作品名、サークル名、声優名、タグ。足りない情報があったら、アプリの中で書き足せます。</p>
+                <p>作品全体の情報も、トラックごとの情報も編集できます。好きな声優やジャンルで探すときに役立ちます。</p>
+              </div>
+              <figure class="story-figure story-pair">
+                <div class="paired-screens">
+                  <button class="screen-button" type="button" data-full="assets/img/screenshots/work-edit.jpg" data-title="作品情報の編集" aria-label="作品情報の編集画面を拡大">
+                    <img src="assets/img/screenshots/work-edit.jpg" alt="作品名、サークル名、発売日、声優を編集する画面" width="588" height="1280" loading="lazy" />
+                  </button>
+                  <button class="screen-button" type="button" data-full="assets/img/screenshots/track-edit.jpg" data-title="トラック情報の編集" aria-label="トラック情報の編集画面を拡大">
+                    <img src="assets/img/screenshots/track-edit.jpg" alt="トラック単位で情報を編集する画面" width="588" height="1280" loading="lazy" />
+                  </button>
+                </div>
+                <figcaption>左が作品の情報、右がトラックの情報です。</figcaption>
+              </figure>
+            </article>
+            <article class="feature-story">
+              <figure class="story-figure">
+                <button class="screen-button" type="button" data-full="assets/img/screenshots/secret-mode.jpg" data-title="シークレットモード" aria-label="シークレットモードの画面を拡大">
+                  <img src="assets/img/screenshots/secret-mode.jpg" alt="ジャケットを非表示にし、作品名の一部を伏せ字にしたライブラリ" width="588" height="1280" loading="lazy" />
+                </button>
+                <figcaption>シークレットモードをオンにしたところ。</figcaption>
+              </figure>
+              <div class="story-copy">
+                <h3>まわりの目が気になるときは<br />シークレットモードで</h3>
+                <p>ジャケットを非表示にして、作品名の一部を伏せ字にできます。外出先などで画面を開くときに使えます。</p>
+                <p>ミニプレイヤーでも表示を隠したまま、再生やトラックの切り替えを操作できます。</p>
+                <p class="small-note">シークレットモードは<a href="#pricing">有料プラン</a>で使えます。</p>
+              </div>
+            </article>
+            <article class="feature-story">
+              <div class="story-copy">
+                <h3>保存した作品だけを選んで<br />オフラインで聴く</h3>
+                <p>聴きたい作品をあらかじめダウンロードしておけば、通信できない場所でも再生できます。</p>
+                <p>「ダウンロード済み」で絞り込むと、端末に保存した作品を見つけられます。</p>
+                <p class="small-note">オフライン再生は<a href="#pricing">有料プラン</a>で使えます。</p>
+              </div>
+              <figure class="story-figure">
+                <button class="screen-button" type="button" data-full="assets/img/screenshots/downloaded-filter.jpg" data-title="ダウンロード済みで絞り込み" aria-label="ダウンロード済みの作品一覧を拡大">
+                  <img src="assets/img/screenshots/downloaded-filter.jpg" alt="ダウンロード済みフィルタで3作品を表示したライブラリ" width="588" height="1280" loading="lazy" />
+                </button>
+                <figcaption>「ダウンロード済み」で絞り込んだところ。</figcaption>
+              </figure>
+            </article>
+            <article class="feature-story">
+              <figure class="story-figure story-pair">
+                <div class="paired-screens">
+                  <button class="screen-button" type="button" data-full="assets/img/screenshots/libraries.jpg" data-title="ライブラリの管理" aria-label="ライブラリの管理画面を拡大">
+                    <img src="assets/img/screenshots/libraries.jpg" alt="メイン、パートナー、デモの3つのライブラリを管理する画面" width="588" height="1280" loading="lazy" />
+                  </button>
+                  <button class="screen-button" type="button" data-full="assets/img/screenshots/library-switcher.jpg" data-title="ライブラリの切り替え" aria-label="ライブラリ切り替えメニューを拡大">
+                    <img src="assets/img/screenshots/library-switcher.jpg" alt="ライブラリ画面の上部から切り替えメニューを開いた状態" width="588" height="1280" loading="lazy" />
+                  </button>
+                </div>
+                <figcaption>ライブラリを作って、画面の上から切り替えられます。</figcaption>
+              </figure>
+              <div class="story-copy">
+                <h3>作品をライブラリごとに分ける</h3>
+                <p>ジャンルや用途に合わせて、ライブラリを分けて管理できます。</p>
+                <p>保存元、作品、再生履歴、端末に保存した音声はライブラリごとに分かれます。今聴きたいライブラリを選んで使えます。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-to" class="section how-to-section">
+        <div class="container">
+          <div class="section-heading">
+            <div><h2>作品の取り込み方</h2><p class="how-to-intro">iCloud Driveから取り込む場合の流れです。</p></div>
+          </div>
+          <div class="how-to-body">
+            <ol class="steps-list">
+              <li><h3>iCloud Driveに保存する</h3><p>購入した作品の音声ファイルを、iCloud Driveのフォルダに保存します。</p></li>
+              <li><h3>ライブラリを更新する</h3><p>にゃんボイスで作品のフォルダを登録して、ライブラリを更新します。作品情報がなくても、フォルダ名から読み込めます。</p></li>
+              <li><h3>作品を開いて再生する</h3><p>ライブラリに作品が並んだら、聴きたいものを開いて再生してください。</p></li>
+            </ol>
+            <figure class="import-figure">
+              <button class="screen-button" type="button" data-full="assets/img/screenshots/sources.jpg" data-title="登録済みの保存元" aria-label="保存元の設定画面を拡大">
+                <img src="assets/img/screenshots/sources.jpg" alt="デモライブラリの保存元としてASMRフォルダを登録した画面" width="588" height="1280" loading="lazy" />
+              </button>
+              <figcaption>作品を入れたフォルダを、保存元として登録します。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section" aria-labelledby="faq-heading">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">使い方はとてもシンプル</p>
-            <h2>3ステップではじめられます</h2>
+
+            <h2 id="faq-heading">よくある質問</h2>
           </div>
 
-          <div class="steps-grid">
-            <article class="step-card reveal">
-              <span class="step-number">1</span>
-              <h3>作品をiCloud Driveに入れる</h3>
-              <p>
-                購入した音声作品を、ふだん使っているiCloud Driveへ保存。
-                特別な変換や複雑な準備は必要ありません。
-              </p>
-            </article>
-            <article class="step-card reveal delay-1">
-              <span class="step-number">2</span>
-              <h3>ライブラリを更新する</h3>
-              <p>
-                アプリからライブラリを更新すると、作品をまとめて読み込み。
-                メタデータ対応作品なら、よりきれいに分類できます。
-              </p>
-            </article>
-            <article class="step-card reveal delay-2">
-              <span class="step-number">3</span>
-              <h3>整理された状態ですぐ楽しめる</h3>
-              <p>
-                アルバム一覧・再生画面・ダウンロード状況まで見やすく表示。
-                作品探しも、聴く時間も、気持ちよくなります。
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="features" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">にゃんボイスの特徴</p>
-            <h2>音声作品を楽しむための機能がたっぷり</h2>
-            <p>
-              ライブラリ整理、再生、オフライン視聴、メタデータ編集、ダウンロード管理まで。
-              欲しい機能を、かわいく、わかりやすくまとめています。
-            </p>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card reveal">
-              <div class="feature-icon">☁️</div>
-              <h3>iCloud Driveからそのまま管理</h3>
-              <p>
-                購入済みの作品をiCloud Driveに置いておけば、アプリ内ライブラリとして扱えます。
-              </p>
-            </article>
-            <article class="feature-card reveal delay-1">
-              <div class="feature-icon">🏷️</div>
-              <h3>メタデータで気持ちよく分類</h3>
-              <p>
-                サークル名、声優名、タグなどの情報を使って、作品を見やすく整理できます。
-              </p>
-            </article>
-            <article class="feature-card reveal delay-2">
-              <div class="feature-icon">📁</div>
-              <h3>フォルダ名ベースでも読み込みOK</h3>
-              <p>
-                メタデータがない作品でも、状況に合わせて分類方式を選べます。
-              </p>
-            </article>
-            <article class="feature-card reveal">
-              <div class="feature-icon">✍️</div>
-              <h3>アプリ内でメタデータ編集</h3>
-              <p>
-                トラック情報・アルバム情報・声優・タグなどを、その場で整えられます。
-              </p>
-            </article>
-            <article class="feature-card reveal delay-1">
-              <div class="feature-icon">🎧</div>
-              <h3>専用プレイヤーで快適再生</h3>
-              <p>
-                作品アートワークを大きく見ながら、再生・シーク・共有までスムーズに行えます。
-              </p>
-            </article>
-            <article class="feature-card reveal delay-2">
-              <div class="feature-icon">📥</div>
-              <h3>オフライン再生にも対応</h3>
-              <p>
-                事前に端末へ保存しておけば、通信が不安定な場所でもスムーズに作品を楽しめます。
-              </p>
-            </article>
-            <article class="feature-card reveal delay-2">
-              <div class="feature-icon">😎</div>
-              <h3>見せたくない時の配慮も</h3>
-              <p>
-                シークレットモードなど、使う場面に応じたプライバシー配慮も取り入れています。
-              </p>
-            </article>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>にゃんボイスで音声作品を買えますか？</summary>
+              <div class="faq-answer">
+                <p>にゃんボイスは、購入済みの音声作品を整理して聴くためのプレイヤーです。作品は販売サイトなどで購入し、音声ファイルを用意してください。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>購入した作品は、どこに保存すればいいですか？</summary>
+              <div class="faq-answer">
+                <p>iCloud Driveに作品の音声ファイルを保存し、にゃんボイスでライブラリを更新すると読み込めます。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>メタデータがない作品でも使えますか？</summary>
+              <div class="faq-answer">
+                <p>はい。作品名・声優名・タグなどの情報（メタデータ）がなくても、フォルダ名をもとに読み込めます。作品の情報は、あとからアプリ内で編集できます。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>無料でどこまで使えますか？</summary>
+              <div class="faq-answer">
+                <p>無料プランでは、50トラックまでのクラウド再生を試せます。上限は作品数ではなく、作品に含まれるトラック数です。有料プランとの違いは<a href="#pricing">料金プラン</a>をご覧ください。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>インターネットにつながらない場所でも聴けますか？</summary>
+              <div class="faq-answer">
+                <p>有料プランのオフライン再生で聴けます。通信できる場所で、聴きたい作品をあらかじめ端末にダウンロードしておいてください。</p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
 
-      <section id="strengths" class="section section-soft">
+      <section id="pricing" class="section pricing-section">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">ここがうれしい</p>
-            <h2>ほかでは得がたい、にゃんボイスの強み</h2>
+          <div class="section-heading">
+            <div><h2>無料で使える範囲と料金</h2></div>
+            <p>無料プランで取り込みや再生を試してから、<br class="desktop-break" />使い方に合わせて選べます。</p>
           </div>
-
-          <div class="strengths-grid">
-            <article class="strength-card reveal">
-              <h3>音声作品のために作られた設計</h3>
-              <p>
-                一般的な音楽プレイヤーだと扱いづらい、作品単位の整理や再生を前提にした作りです。
-              </p>
-            </article>
-            <article class="strength-card reveal delay-1">
-              <h3>整理しやすさが段違い</h3>
-              <p>
-                声優名・タグ・アルバム情報を活かして見つけやすく整理。
-                作品数が増えても管理しやすいのが魅力です。
-              </p>
-            </article>
-            <article class="strength-card reveal delay-2">
-              <h3>あとから自分で整えられる自由さ</h3>
-              <p>
-                足りない情報はアプリ内で編集できるので、使うほど自分好みのライブラリに育ちます。
-              </p>
-            </article>
-            <article class="strength-card reveal">
-              <h3>かわいくて、使っていて楽しい</h3>
-              <p>
-                ふんわりした色合いと軽やかなUIで、整理作業そのものが楽しい体験になります。
-              </p>
-            </article>
+          <div class="pricing-layout">
+            <div>
+              <table class="pricing-table">
+                <caption class="sr-only">無料プランと有料プランで使える機能</caption>
+                <thead><tr><th scope="col">機能</th><th scope="col">無料</th><th scope="col">有料</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">トラック数</th><td>50まで</td><td>無制限</td></tr>
+                  <tr><th scope="row">クラウド再生</th><td>対応</td><td>対応</td></tr>
+                  <tr><th scope="row">オフライン再生</th><td><span aria-label="非対応">—</span></td><td>対応</td></tr>
+                  <tr><th scope="row">シークレットモード</th><td><span aria-label="非対応">—</span></td><td>対応</td></tr>
+                  <tr><th scope="row">複数フォルダ</th><td><span aria-label="非対応">—</span></td><td>対応</td></tr>
+                </tbody>
+              </table>
+              <p class="small-note">上限は作品数ではなく、作品に含まれるトラックの合計です。</p>
+            </div>
+            <div class="payment-options">
+              <h3>有料プランの支払い方法</h3>
+              <p>どの支払い方法でも、使える機能は同じです。</p>
+              <dl>
+                <div><dt>月額</dt><dd>¥150<span> / 月</span></dd></div>
+                <div><dt>年額</dt><dd>¥1,500<span> / 年</span></dd></div>
+                <div><dt>買い切り</dt><dd>¥2,500</dd></div>
+                <div class="support-plan"><dt>月額・開発を応援</dt><dd>¥300<span> / 月</span></dd></div>
+              </dl>
+            </div>
           </div>
+          <p class="small-note pricing-note">価格やプラン内容は変更されることがあります。最新の情報は<a href="https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%83%9C%E3%82%A4%E3%82%B9-nearvoice/id6748361244" target="_blank" rel="noopener noreferrer">App Store</a>でご確認ください。</p>
         </div>
       </section>
 
-      <section id="pricing" class="section">
+      <section id="screenshots" class="section screenshots-section">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">料金プラン</p>
-            <h2>無料で試して、気に入ったら拡張できます</h2>
-            <p>
-              まずは無料でクラウド再生を試せます。有料プランはどれも同じ機能で、支払い方や応援の気持ちに合わせて選べます。
-            </p>
+          <div class="section-heading">
+            <h2>アプリの画面</h2>
+            <p>画像を押すと拡大できます。<br />画面に表示している作品は架空のものです。</p>
           </div>
-
-          <div class="pricing-table-wrap">
-            <table class="pricing-table">
-              <thead>
-                <tr>
-                  <th scope="col">機能</th>
-                  <th scope="col">
-                    無料
-                    <span>¥0</span>
-                  </th>
-                  <th scope="col">
-                    月額
-                    <span>¥150/月</span>
-                  </th>
-                  <th scope="col">
-                    月額（応援）
-                    <span>¥300/月</span>
-                  </th>
-                  <th scope="col">
-                    年額
-                    <span>¥1,500/年</span>
-                  </th>
-                  <th scope="col">
-                    永年
-                    <span>¥2,500</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">トラック上限</th>
-                  <td>50まで</td>
-                  <td>無制限</td>
-                  <td>無制限</td>
-                  <td>無制限</td>
-                  <td>無制限</td>
-                </tr>
-                <tr>
-                  <th scope="row">クラウド再生</th>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                </tr>
-                <tr>
-                  <th scope="row">オフライン再生</th>
-                  <td class="is-unavailable">-</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                </tr>
-                <tr>
-                  <th scope="row">シークレットモード</th>
-                  <td class="is-unavailable">-</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                </tr>
-                <tr>
-                  <th scope="row">複数フォルダ</th>
-                  <td class="is-unavailable">-</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                  <td class="is-available">○</td>
-                </tr>
-                <tr>
-                  <th scope="row">補足</th>
-                  <td>まず試したい方向け</td>
-                  <td>標準の月額プラン</td>
-                  <td>開発者を応援するためのプラン</td>
-                  <td>継続して使う方向け</td>
-                  <td>買い切りで使いたい方向け</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p class="pricing-note">
-            ※有料プランはすべて同じ機能です。価格やプラン内容は変更されることがあります。最新情報はApp Storeまたは
-            <a href="https://izanami.dev/post/327dfc8d-e30b-4300-ba8e-e4a5934b1fb9" target="_blank" rel="noopener noreferrer">紹介記事</a>
-            をご確認ください。
-          </p>
-        </div>
-      </section>
-
-      <section id="screenshots" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">スクリーンショット</p>
-            <h2>使う流れに沿って、画面をチェック</h2>
-            <p>取り込み、再生、編集・管理の流れごとに整理しました。気になる画面はタップで大きく表示できます。</p>
-            <p class="caption-note">※スクリーンショット内に表示される音声作品は、すべて架空のものです。</p>
-          </div>
-
           <div class="screenshot-groups">
-            <article class="screenshot-category reveal">
+            <article class="screenshot-category">
               <div class="screenshot-category-head">
-                <p class="category-kicker">Step 01</p>
-                <h3>取り込みから整理まで</h3>
-                <p>iCloud Driveの作品を読み込み、ライブラリに並ぶまでの流れ。</p>
-              </div>
-              <div class="gallery-rail" aria-label="取り込みから整理まで">
-                <button class="gallery-card" data-full="assets/img/library-empty.webp" data-title="ライブラリ画面">
-                  <img src="assets/img/library-empty.webp" alt="ライブラリ画面" loading="lazy" />
-                  <span>ライブラリ画面</span>
-                </button>
-                <button class="gallery-card" data-full="assets/img/scan-method.webp" data-title="スキャン方法の選択">
-                  <img src="assets/img/scan-method.webp" alt="スキャン方法の選択画面" loading="lazy" />
-                  <span>スキャン方法の選択</span>
-                </button>
-                <button class="gallery-card" data-full="assets/img/scan-progress.webp" data-title="ライブラリ更新中">
-                  <img src="assets/img/scan-progress.webp" alt="ライブラリ更新中の画面" loading="lazy" />
-                  <span>ライブラリ更新中</span>
-                </button>
-                <button class="gallery-card" data-full="assets/img/scan-result.webp" data-title="整理後のライブラリ">
-                  <img src="assets/img/scan-result.webp" alt="スキャン結果が表示されたライブラリ画面" loading="lazy" />
-                  <span>整理後のライブラリ</span>
-                </button>
-              </div>
-            </article>
-
-            <article class="screenshot-category reveal delay-1">
-              <div class="screenshot-category-head">
-                <p class="category-kicker">Step 02</p>
+                <p class="category-kicker">作品と再生</p>
                 <h3>作品を選んで聴く</h3>
-                <p>アルバム詳細から再生画面まで、聴く時間に使う画面。</p>
+                <p>作品の一覧、詳細、再生画面とシークレットモードです。</p>
               </div>
               <div class="gallery-rail" aria-label="作品を選んで聴く">
-                <button class="gallery-card" data-full="assets/img/album-detail.webp" data-title="アルバム詳細">
-                  <img src="assets/img/album-detail.webp" alt="アルバム詳細画面" loading="lazy" />
-                  <span>アルバム詳細</span>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/library.jpg" data-title="ライブラリ">
+                  <img src="assets/img/screenshots/library.jpg" alt="ライブラリ" width="588" height="1280" loading="lazy" />
+                  <span>ライブラリ</span>
                 </button>
-                <button class="gallery-card" data-full="assets/img/player.webp" data-title="再生画面">
-                  <img src="assets/img/player.webp" alt="再生画面" loading="lazy" />
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/work-detail.jpg" data-title="作品詳細">
+                  <img src="assets/img/screenshots/work-detail.jpg" alt="作品詳細" width="588" height="1280" loading="lazy" />
+                  <span>作品詳細</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/player.jpg" data-title="再生画面">
+                  <img src="assets/img/screenshots/player.jpg" alt="再生画面" width="588" height="1280" loading="lazy" />
                   <span>再生画面</span>
                 </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/secret-mode.jpg" data-title="シークレットモード">
+                  <img src="assets/img/screenshots/secret-mode.jpg" alt="シークレットモード" width="588" height="1280" loading="lazy" />
+                  <span>シークレットモード</span>
+                </button>
               </div>
             </article>
-
-            <article class="screenshot-category reveal delay-2">
+            <article class="screenshot-category">
               <div class="screenshot-category-head">
-                <p class="category-kicker">Step 03</p>
-                <h3>あとから整える・持ち出す</h3>
-                <p>メタデータ編集やダウンロード状態の管理まで、使い込むための画面。</p>
+                <p class="category-kicker">整理</p>
+                <h3>作品情報とライブラリの管理</h3>
+                <p>作品やトラックの情報を整えたり、ライブラリを分けたりできます。</p>
               </div>
-              <div class="gallery-rail" aria-label="あとから整える・持ち出す">
-                <button class="gallery-card" data-full="assets/img/track-edit.webp" data-title="トラック情報の編集">
-                  <img src="assets/img/track-edit.webp" alt="トラック情報編集画面" loading="lazy" />
+              <div class="gallery-rail" aria-label="作品情報とライブラリの管理">
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/work-edit.jpg" data-title="作品情報の編集">
+                  <img src="assets/img/screenshots/work-edit.jpg" alt="作品情報の編集" width="588" height="1280" loading="lazy" />
+                  <span>作品情報の編集</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/track-edit.jpg" data-title="トラック情報の編集">
+                  <img src="assets/img/screenshots/track-edit.jpg" alt="トラック情報の編集" width="588" height="1280" loading="lazy" />
                   <span>トラック情報の編集</span>
                 </button>
-                <button class="gallery-card" data-full="assets/img/album-edit.webp" data-title="アルバム情報の編集">
-                  <img src="assets/img/album-edit.webp" alt="アルバム情報編集画面" loading="lazy" />
-                  <span>アルバム情報の編集</span>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/libraries.jpg" data-title="ライブラリの管理">
+                  <img src="assets/img/screenshots/libraries.jpg" alt="ライブラリの管理" width="588" height="1280" loading="lazy" />
+                  <span>ライブラリの管理</span>
                 </button>
-                <button class="gallery-card" data-full="assets/img/download-complete.webp" data-title="ダウンロード状態の管理">
-                  <img src="assets/img/download-complete.webp" alt="ダウンロード完了状態の画面" loading="lazy" />
-                  <span>ダウンロード状態の管理</span>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/library-switcher.jpg" data-title="ライブラリの切り替え">
+                  <img src="assets/img/screenshots/library-switcher.jpg" alt="ライブラリの切り替え" width="588" height="1280" loading="lazy" />
+                  <span>ライブラリの切り替え</span>
+                </button>
+              </div>
+            </article>
+            <article class="screenshot-category">
+              <div class="screenshot-category-head">
+                <p class="category-kicker">取り込みと保存</p>
+                <h3>保存元を登録して持ち出す</h3>
+                <p>保存元の設定と、ダウンロード済みの作品を表示する画面です。</p>
+              </div>
+              <div class="gallery-rail" aria-label="保存元を登録して持ち出す">
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/sources.jpg" data-title="登録済みの保存元">
+                  <img src="assets/img/screenshots/sources.jpg" alt="登録済みの保存元" width="588" height="1280" loading="lazy" />
+                  <span>登録済みの保存元</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/library-downloads.jpg" data-title="保存状況が分かる一覧">
+                  <img src="assets/img/screenshots/library-downloads.jpg" alt="保存状況が分かる一覧" width="588" height="1280" loading="lazy" />
+                  <span>保存状況が分かる一覧</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/downloaded-filter.jpg" data-title="ダウンロード済みで絞り込み">
+                  <img src="assets/img/screenshots/downloaded-filter.jpg" alt="ダウンロード済みで絞り込み" width="588" height="1280" loading="lazy" />
+                  <span>ダウンロード済みで絞り込み</span>
+                </button>
+              </div>
+            </article>
+            <article class="screenshot-category">
+              <div class="screenshot-category-head">
+                <p class="category-kicker">表示と記録</p>
+                <h3>色を変えたり記録を見たり</h3>
+                <p>ピンク以外の表示も選べます。集計画面では再生の記録や作品数を確認できます。</p>
+              </div>
+              <div class="gallery-rail" aria-label="色を変えたり記録を見たり">
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/theme-blue.jpg" data-title="ブルー系の表示">
+                  <img src="assets/img/screenshots/theme-blue.jpg" alt="ブルー系の表示" width="588" height="1280" loading="lazy" />
+                  <span>ブルー系の表示</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/theme-dark.jpg" data-title="ダークの表示">
+                  <img src="assets/img/screenshots/theme-dark.jpg" alt="ダークの表示" width="588" height="1280" loading="lazy" />
+                  <span>ダークの表示</span>
+                </button>
+                <button class="gallery-card" type="button" data-full="assets/img/screenshots/statistics.jpg" data-title="ライブラリの集計">
+                  <img src="assets/img/screenshots/statistics.jpg" alt="ライブラリの集計" width="588" height="1280" loading="lazy" />
+                  <span>ライブラリの集計</span>
                 </button>
               </div>
             </article>
@@ -399,54 +354,20 @@
         </div>
       </section>
 
-      <section id="videos" class="section section-soft">
+      <section id="videos" class="section videos-section">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">紹介動画</p>
-            <h2>動画で見ると、もっと伝わる</h2>
-            <p>実際の動きや使い心地は、動画で見るとよりイメージしやすくなります。</p>
-          </div>
-
+          <div class="section-heading"><h2>動画で操作を見る</h2></div>
           <div class="video-grid">
-            <article class="video-card reveal">
-              <div class="video-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/ueieks6ZV-4?si=6xUSAC8ZJXaYPcdf"
-                  title="にゃんボイス紹介動画 1"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <h3>紹介動画 01</h3>
-              <p>ライブラリの使い方や画面の雰囲気を、さっと確認できます。</p>
-            </article>
-            <article class="video-card reveal delay-1">
-              <div class="video-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/TVFRIqgki00?si=YGNBVBcox-fkNO7W"
-                  title="にゃんボイス紹介動画 2"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <h3>紹介動画 02</h3>
-              <p>機能や操作感を、もう少し詳しく知りたい方向けの動画です。</p>
-            </article>
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/ueieks6ZV-4?si=6xUSAC8ZJXaYPcdf" title="にゃんボイス紹介動画 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="video-wrap"><iframe src="https://www.youtube.com/embed/TVFRIqgki00?si=YGNBVBcox-fkNO7W" title="にゃんボイス紹介動画 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
           </div>
         </div>
       </section>
 
-      <section id="partners" class="section">
+      <section id="partners" class="section partners-section">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">パートナーサークル</p>
-            <h2>一緒に音声作品体験を広げていくサークル様</h2>
-            <p>にゃんボイスと一緒に、音声作品をもっと楽しみやすくしていくサークル様をご紹介します。</p>
-          </div>
-
-          <div class="partner-list reveal delay-1" aria-label="パートナーサークル一覧">
+          <div class="section-heading"><h2>パートナーサークル</h2><p>にゃんボイスにご協力いただいている<br class="desktop-break" />サークルをご紹介します。</p></div>
+          <div class="partner-list" aria-label="パートナーサークル一覧">
             <div class="partner-card">
               <div class="partner-card-top">
                 <img
@@ -550,72 +471,40 @@
         </div>
       </section>
 
-      <section id="links" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">リンク</p>
-            <h2>詳しく知りたい方はこちら</h2>
-          </div>
-
-          <div class="link-cards">
-            <a class="link-card download-link-card reveal" href="https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%83%9C%E3%82%A4%E3%82%B9-nearvoice/id6748361244" target="_blank" rel="noopener noreferrer">
-              <div>
-                <p class="link-label">ダウンロード</p>
-                <h3>App Storeでにゃんボイスをダウンロード</h3>
-                <p>iPhone / iPadで、購入した音声作品をもっと快適に楽しめます。</p>
-              </div>
-              <span class="link-arrow">↗</span>
-            </a>
-            <a class="link-card reveal" href="https://izanami.dev/post/327dfc8d-e30b-4300-ba8e-e4a5934b1fb9" target="_blank" rel="noopener noreferrer">
-              <div>
-                <p class="link-label">紹介記事</p>
-                <h3>にゃんボイスの紹介記事を読む</h3>
-                <p>背景や考え方を含めて、もう少し丁寧に知りたい方はこちら。</p>
-              </div>
-              <span class="link-arrow">↗</span>
-            </a>
-            <a class="link-card reveal delay-1" href="#videos">
-              <div>
-                <p class="link-label">紹介動画</p>
-                <h3>動画で雰囲気を見る</h3>
-                <p>実際の画面や動きが気になる方は、上の動画セクションをご覧ください。</p>
-              </div>
-              <span class="link-arrow">▶</span>
-            </a>
-            <a class="link-card reveal delay-1" href="https://x.com/coder_yuuki" target="_blank" rel="noopener noreferrer">
-              <div>
-                <p class="link-label">開発者のX</p>
-                <h3>@coder_yuuki をフォロー</h3>
-                <p>アップデート情報や開発メモはこちらで発信しています。</p>
-              </div>
-              <span class="link-arrow">↗</span>
-            </a>
-          </div>
+      <section id="links" class="section closing-section">
+        <div class="container closing-inner">
+          <img src="assets/img/app-icon.webp" alt="" width="88" height="88" loading="lazy" />
+          <div><h2>手持ちの作品で試してみてください</h2><p>iPhone / iPad 対応。無料で50トラックまで。</p></div>
+          <a class="button primary" href="https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%83%9C%E3%82%A4%E3%82%B9-nearvoice/id6748361244" target="_blank" rel="noopener noreferrer">App Storeでダウンロード <span aria-hidden="true">↗</span></a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>にゃんボイス</strong>
-          <p>購入した音声作品を、もっと快適に、もっと楽しく。</p>
+      <div class="container">
+        <div class="footer-main">
+          <a class="brand" href="#top">にゃんボイス</a>
+          <nav class="footer-links" aria-label="関連リンク">
+            <a href="https://izanami.dev/post/327dfc8d-e30b-4300-ba8e-e4a5934b1fb9" target="_blank" rel="noopener noreferrer">紹介記事 ↗</a>
+            <a href="https://x.com/coder_yuuki" target="_blank" rel="noopener noreferrer">開発者のX ↗</a>
+            <a href="#videos">紹介動画</a>
+            <a href="#partners">パートナーサークル</a>
+          </nav>
         </div>
-        <nav class="footer-links" aria-label="フッターナビゲーション">
-          <a href="privacy.html">プライバシーポリシー</a>
-          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">利用規約</a>
-        </nav>
+        <div class="footer-bottom">
+          <p>© にゃんボイス</p>
+          <nav class="footer-links" aria-label="規約とポリシー">
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">利用規約</a>
+          </nav>
+        </div>
       </div>
     </footer>
 
-    <dialog id="lightbox" class="lightbox">
-      <button class="lightbox-close" type="button" aria-label="閉じる">×</button>
-      <figure>
-        <img id="lightbox-image" src="" alt="" />
-        <figcaption id="lightbox-caption"></figcaption>
-      </figure>
+    <dialog id="lightbox" class="lightbox" aria-label="アプリ画面の拡大表示" aria-describedby="lightbox-caption">
+      <button class="lightbox-close" type="button" aria-label="閉じる" autofocus>×</button>
+      <figure><img id="lightbox-image" alt="" /><figcaption id="lightbox-caption"></figcaption></figure>
     </dialog>
-
     <script src="script.js"></script>
   </body>
 </html>
