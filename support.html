@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サポート | にゃんボイス〜NearVoice〜</title>
+    <meta
+      name="description"
+      content="にゃんボイスの始め方、メニューの使い方、プレミアム、iCloudバックアップ、よくある質問、お問い合わせ先です。"
+    />
+    <meta name="theme-color" content="#bf3d68" />
+    <link rel="icon" href="assets/img/app-icon.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="にゃんボイス トップページへ移動">
+          <img src="assets/img/app-icon.webp" alt="" width="40" height="40" />
+          <span>にゃんボイス</span>
+        </a>
+        <nav class="policy-nav" aria-label="ページナビゲーション">
+          <a href="index.html">公式サイトへ戻る</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="policy-main">
+      <div class="container policy-shell">
+        <header class="policy-hero">
+          <p class="eyebrow">Support</p>
+          <h1>サポート</h1>
+          <p>にゃんボイスの始め方、メニューの使い方、よくある質問をまとめています。解決しないときは、ページの最後にあるお問い合わせフォームからご連絡ください。</p>
+          <ul class="support-toc" aria-label="このページの内容">
+            <li><a href="#start">始め方</a></li>
+            <li><a href="#import">読み込み</a></li>
+            <li><a href="#tags">タグと声優</a></li>
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#premium">プレミアム</a></li>
+            <li><a href="#backup">iCloudバックアップ</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </header>
+
+        <article class="policy-card support-card">
+          <section id="start">
+            <h2>始め方</h2>
+            <ol class="steps-list">
+              <li>
+                <h3>音声ファイルを保存する</h3>
+                <p>購入した作品の音声ファイル（mp3・m4a）を、iCloud Driveや「このiPhone内」など、Filesアプリから見えるフォルダに保存します。</p>
+              </li>
+              <li>
+                <h3>保存場所を選ぶ</h3>
+                <p>アプリを開くとセットアップガイドが出ます。「保存場所を選ぶ」から、音声ファイルが入っているフォルダを選んでください。元のファイルを移動したり削除したりすることはありません。</p>
+              </li>
+              <li>
+                <h3>読み込みを開始する</h3>
+                <p>作品名やアーティストなどの情報を読み取って、ライブラリに作品が並びます。あとは作品を選んで再生するだけです。</p>
+              </li>
+            </ol>
+            <p class="support-note">選んだフォルダの中にあるフォルダも、まとめて読み込みます。作品ごとのフォルダが入った親フォルダを選ぶと、全部の作品を一度に追加できます。セットアップガイドは、メニューの「セットアップガイドを見る」からもう一度開けます。</p>
+            <pre class="support-tree" aria-label="フォルダ構成の例">音声作品（このフォルダを選ぶ）
+├ 作品A
+│ ├ 01.mp3
+│ └ 02.mp3
+└ 作品B
+  ├ 01.m4a
+  └ 02.m4a</pre>
+          </section>
+
+          <section id="import">
+            <h2>読み込みについて</h2>
+            <ul>
+              <li>iCloud Driveにある音声は、読み込むときに通信が発生します。作品が多いときは、Wi-Fiにつながった場所での読み込みをおすすめします。</li>
+              <li>読み込み中も、ほかの操作や再生を続けられます。途中で中止しても、次の読み込みで続きから確認します。</li>
+              <li>作品名・声優名・タグなどの情報がない音声でも、フォルダ名をもとに読み込めます。作品の情報は、あとからアプリ内で編集できます。</li>
+              <li>ライブラリで作品を選ぶと、その作品だけを再スキャンしたり、複数の作品を1つに統合したりできます。</li>
+            </ul>
+          </section>
+
+          <section id="tags">
+            <h2>タグと声優（アーティスト）の登録</h2>
+            <p>
+              にゃんボイスは、1つの作品に複数のタグや声優を登録できます。音声ファイルの情報に複数の名前を入れるときは、
+              <strong>半角のセミコロン「;」</strong>で区切ってください（例：<code>声優A;声優B</code>）。
+            </p>
+            <p>
+              音声ファイルの情報をまとめて編集できる無料ソフト
+              <a href="https://github.com/coder-yuuki/VoiceTagEditor" target="_blank" rel="noopener noreferrer">VoiceTagEditor</a>
+              も公開しています。
+            </p>
+          </section>
+
+          <section id="menu">
+            <h2>メニューの主な項目</h2>
+            <dl class="support-list">
+              <div><dt>登録済みフォルダ</dt><dd>読み込む元のフォルダを確認・追加・解除します。登録を解除すると、そのフォルダから読み込んだ作品はライブラリから外れますが、元のファイルは消えません。</dd></div>
+              <div><dt>ライブラリのソート</dt><dd>作品の並び順を変えます。「キー」で並べる項目を、「順序」で昇順・降順を選びます。</dd></div>
+              <div><dt>表示スタイル</dt><dd>作品の一覧を、グリッドとリストから選べます。</dd></div>
+              <div><dt>アートワークサイズ</dt><dd>一覧のジャケット画像の細かさを変えます。一覧の動きが重いときは小さくしてみてください。</dd></div>
+              <div><dt>先読み設定</dt><dd>再生しながら先に読み込む量を、「自動」「省データ」「安定重視」から選びます。</dd></div>
+              <div><dt>ダウンロードを全て削除</dt><dd>オフライン再生用に端末へ保存した音声をまとめて削除します。端末の容量が足りないときにお使いください。</dd></div>
+              <div><dt>シークレットモード</dt><dd>作品名やジャケット画像を隠して表示します（プレミアム）。</dd></div>
+              <div><dt>iCloudバックアップ</dt><dd>ライブラリをiCloudへ手動で保存・復元します（プレミアム）。</dd></div>
+            </dl>
+          </section>
+
+          <section id="premium">
+            <h2>プレミアム</h2>
+            <p>無料では、ライブラリに50トラックまで表示できます。上限は作品数ではなく、作品に含まれるトラックの合計です。プレミアムにすると、次の機能が使えます。</p>
+            <ul>
+              <li><strong>無制限ライブラリ：</strong>トラック数の上限がなくなります。</li>
+              <li><strong>オフライン再生：</strong>作品を端末にダウンロードして、通信なしで聴けます。</li>
+              <li><strong>シークレットモード：</strong>作品名やジャケット画像を隠します。</li>
+              <li><strong>複数フォルダ：</strong>読み込む元のフォルダを複数登録できます。</li>
+              <li><strong>iCloudバックアップ：</strong>ライブラリをiCloudに保存・復元できます。</li>
+            </ul>
+            <p>支払い方法は月額・年額・買い切りから選べます。どれを選んでも、使える機能は同じです。価格は<a href="index.html#pricing">料金の案内</a>とApp Storeの表示をご確認ください。</p>
+          </section>
+
+          <section id="backup">
+            <h2>iCloudバックアップ</h2>
+            <p>メニューの「iCloudバックアップ」から、すべてのライブラリをまとめてiCloudに保存できます。自動では保存されないので、必要なときに「バックアップを作成」を押してください。</p>
+            <ul>
+              <li><strong>保存されるもの：</strong>作品リスト、編集した内容、お気に入り、タグ、再生履歴と再生位置、小さくしたジャケット画像</li>
+              <li><strong>保存されないもの：</strong>音声ファイル本体</li>
+              <li><strong>復元すると：</strong>この端末のライブラリがバックアップの内容に置き換わります。端末にダウンロードした音声は削除されるので、必要に応じてダウンロードし直してください。FilesやiCloud Drive上の元の音声は削除しません。</li>
+            </ul>
+            <p>新しい端末で復元したあと、まだ再生できない作品があるときは、画面の案内に沿ってフォルダを選び直すと再生できるようになります。</p>
+          </section>
+
+          <section id="faq">
+            <h2>よくある質問</h2>
+            <div class="faq-list">
+              <details class="faq-item">
+                <summary>にゃんボイスで音声作品を買えますか？</summary>
+                <div class="faq-answer"><p>買えません。にゃんボイスは、購入済みの音声作品を整理して聴くためのプレイヤーです。作品は販売サイトなどで購入し、音声ファイルを用意してください。</p></div>
+              </details>
+              <details class="faq-item">
+                <summary>どの形式の音声ファイルに対応していますか？</summary>
+                <div class="faq-answer"><p>mp3とm4aに対応しています。</p></div>
+              </details>
+              <details class="faq-item">
+                <summary>ほかの端末とライブラリを同期できますか？</summary>
+                <div class="faq-answer"><p>自動での同期はできません。プレミアムのiCloudバックアップで保存し、ほかの端末で復元すると、作品リストや再生位置を移せます。</p></div>
+              </details>
+              <details class="faq-item">
+                <summary>月額のプランが2種類ありますが、違いはありますか？</summary>
+                <div class="faq-answer"><p>使える機能は同じです。高いほうは、開発を応援していただくためのプランです。</p></div>
+              </details>
+              <details class="faq-item">
+                <summary>購入したプレミアムが反映されません</summary>
+                <div class="faq-answer"><p>プレミアムの画面にある「購入を復元する」をお試しください。購入したときと同じApple IDでApp Storeにサインインしているかもご確認ください。</p></div>
+              </details>
+              <details class="faq-item">
+                <summary>作品が表示されない・情報がおかしいときは？</summary>
+                <div class="faq-answer"><p>その作品を選んで再スキャンしてみてください。それでも直らないときは、メニューの「登録済みフォルダ」で、音声ファイルのあるフォルダが登録されているかをご確認ください。</p></div>
+              </details>
+            </div>
+          </section>
+
+          <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>上記で解決しないことや、不具合の報告、ご要望は、お問い合わせフォームからお送りください。お使いの端末、iOSとアプリのバージョン、困っていることを書いていただけると確認がスムーズです。</p>
+            <p class="support-actions">
+              <a class="button primary" href="https://forms.gle/75ov14Kz2HoJCVUj6" target="_blank" rel="noopener noreferrer">お問い合わせフォーム <span aria-hidden="true">↗</span></a>
+            </p>
+            <p class="support-note">開発者：野久知 優希（<a href="https://x.com/coder_yuuki" target="_blank" rel="noopener noreferrer">X</a>）</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>にゃんボイス〜NearVoice〜</strong>
+          <p>購入した音声作品を、もっと快適に、もっと楽しく。</p>
+        </div>
+        <nav class="footer-links" aria-label="フッターナビゲーション">
+          <a href="index.html">公式サイト</a>
+          <a href="privacy.html">プライバシーポリシー</a>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">利用規約</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
